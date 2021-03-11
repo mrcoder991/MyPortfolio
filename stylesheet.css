@@ -1,0 +1,255 @@
+body{
+    margin: 0px;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+.landing-page{
+    min-height:100vh;
+    max-height:fit-content;
+    background-image: url("landing-page.jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.topnav {
+    overflow: hidden;
+    width: 95%;
+    border-top:1px solid rgba(255,255,255,0.4);
+    border-left:1px solid rgba(255,255,255,0.4);
+    background-color: rgba(45, 45, 45, 0.408);
+    position: fixed;
+    top: 10px;
+    border-radius: 50em;
+    backdrop-filter: blur(15px);
+    box-shadow: 10px 10px 30px rgba(0,0,0,0.5);
+    z-index: 1;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    font-family: "noto sans";
+    color:  rgba(255, 255, 255, 0.809);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    transition: all 0.2s ease-in-out;
+}
+.topnav a:hover {
+    background-color: rgba(255, 255, 255, 0.591);
+    color: rgba(0, 0, 0, 0.918);
+}
+.name{
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.topnav .icon {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {
+        display: none;
+    }
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+    .topnav{
+        position: relative;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .topnav.responsive {
+        position:relative;
+        border-radius: 20px;
+    }
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+.info-card{
+    min-width: 20%;
+    max-width: 250px;
+    
+    border-top:1px solid rgba(255,255,255,0.4);
+    border-left:1px solid rgba(255,255,255,0.4);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    box-shadow: 10px 10px 30px rgba(0,0,0,0.5);
+    padding: 10px;
+    margin: 5% 0px;
+    color: rgba(255, 255, 255, 0.687);
+    transition: all 0.15s ease-in-out;
+    text-align: center;
+    font-family: 'noto sans';
+}
+.info-card h1{
+    font-size: 110px;
+    line-height: 0%;
+    position: relative;
+    left: 30px;
+    top: 50px;
+    opacity: 15%;
+    padding: opx;
+    pointer-events: none;
+}
+.info-card:hover{
+    transform: scale(1.1);
+    color: rgba(255, 255, 255, 0.857);
+    background-color: rgba(0, 0, 0, 0.251);
+}
+.learn-more{
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 1px solid white;
+    border-radius: 50vh;
+    background-color: rgba(240, 248, 255, 0.666);
+    transition: all 0.15s ease-in-out;
+    color:rgb(78, 78, 78);
+}
+.learn-more:hover{
+    padding: 7px 20px;
+    background-color: white;
+    color: black;
+    box-shadow: 10px 10px 30px rgba(255, 255, 255, 0.7),-10px -10px 30px rgba(197, 193, 193, 0.7); 
+}
+.photography-projects img{
+    width: 100%;
+}
+.photography-projects h1,h2{
+    text-align: center;
+}
+.heading{
+    font-family: "Titillium Web";
+    font-size: 9vh;
+    letter-spacing: 9px;
+    margin-bottom: 5px;
+}
+.photography-projects h2{
+    font-family: "noto sans";
+    font-size: 20px;
+    letter-spacing: 5px;
+    margin-bottom: 30px;
+}
+.photography-projects p{
+    margin: 10px 15%;
+    font-size: 22px;
+    letter-spacing: 1px;
+    font-family: "noto sans";
+}
+.design-projects ,.developer-projects{
+    display: flex;
+    flex-wrap: wrap;
+}
+.design-text, .developer-text{
+    width: 45%;
+    padding-left: 30px;
+    flex-grow: 1;
+}
+.design-text p, .developer-text p{
+    font-size: 1.5em;
+    letter-spacing: 1px;
+    font-family: "noto sans";
+}
+.design-image, .developer-image{
+    width: 50%;
+    margin: auto 10px;
+    flex-grow: 1;
+}
+.design-image img, .developer-image img{
+    width: 90%;
+}
+.contact-me h1{
+    text-align: center;
+}
+.social-logo{
+    display: flex;
+    justify-content: center;
+}
+.contact-me p{
+    font-size: 22px;
+    letter-spacing: 1.5px;
+    font-family: "noto sans";
+    text-align: center;
+}
+.socials img{
+    width: 9vh;
+    margin: 10px;
+}
+.mail{
+    text-align: center;
+    font-size: 22px;
+    letter-spacing: 1.5px;
+    font-family: "noto sans";
+}
+.mail a{
+    border: 2px solid rgb(83, 83, 83);
+    padding: 3px 10px;
+    border-radius: 50vh;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    background-color:#bdcaa8;
+    transition: all 0.15s ease-in-out;
+}
+.mail a:hover{
+    padding: 7px 20px;
+    background-color: rgb(0, 0, 0);
+    border-color: rgba(255, 255, 255, 0);
+    color: rgb(255, 255, 255);
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.7),-5px -5px 20px rgba(0, 0, 0, 0.7);
+}
+.attribute{
+    font-size: 12px;
+    text-align: right;
+}
+footer{
+    background-color: rgb(34, 61, 64);
+    height: fit-content;
+    padding: 10px;
+    color: paleturquoise;
+    vertical-align: middle;
+    text-align: right;
+    font-family: 'Courier New';
+    font-weight: bold;
+    padding-right: 4em;
+    font-size: 10px;
+}
+@media(max-width:600px){
+    .heading{
+        font-size: 40px;
+        letter-spacing: 1.5px;
+    }
+    .design-text p, .developer-text p,.photography-projects p{
+        font-size: 16px;
+        margin: 12px;
+    }
+    .photography-projects p{
+        margin: 7%;
+    }
+    .developer-image img, .design-image img{
+        margin: 0px 20px;
+    }
+    .socials img{
+    width: 9vw;
+    }
+    .attribute a{
+    font-size: 8px;
+    }
+    .mail{
+        font-size: 12px;
+    }    
+}
