@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 body{
     margin: 0px;
     overflow-y: scroll;
@@ -6,7 +9,7 @@ body{
 .landing-page{
     min-height:100vh;
     max-height:fit-content;
-    background-image: url("landing-page.jpg");
+    background-image: url("../images/landing-page.jpg");
     background-position: center;
     background-size: cover;
     display: flex;
